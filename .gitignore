@@ -137,7 +137,7 @@ dist
 xpacks/
 build*/
 
-xpack-*.tgz
+/*.tgz
 
 # Windows
 Thumbs.db
