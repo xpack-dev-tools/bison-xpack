@@ -1,12 +1,12 @@
 
-[![GitHub package.json version](https://img.shields.io/github/package-json/v/xpack-dev-tools/sed-xpack)](https://github.com/xpack-dev-tools/sed-xpack/blob/xpack/package.json)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/xpack-dev-tools/sed-xpack)](https://github.com/xpack-dev-tools/sed-xpack/releases/)
-[![npm (scoped)](https://img.shields.io/npm/v/@xpack-dev-tools/sed.svg?color=blue)](https://www.npmjs.com/package/@xpack-dev-tools/sed/)
-[![license](https://img.shields.io/github/license/xpack-dev-tools/sed-xpack)](https://github.com/xpack-dev-tools/sed-xpack/blob/xpack/LICENSE)
+[![GitHub package.json version](https://img.shields.io/github/package-json/v/xpack-dev-tools/bison-xpack)](https://github.com/xpack-dev-tools/bison-xpack/blob/xpack/package.json)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/xpack-dev-tools/bison-xpack)](https://github.com/xpack-dev-tools/bison-xpack/releases/)
+[![npm (scoped)](https://img.shields.io/npm/v/@xpack-dev-tools/bison.svg?color=blue)](https://www.npmjs.com/package/@xpack-dev-tools/bison/)
+[![license](https://img.shields.io/github/license/xpack-dev-tools/bison-xpack)](https://github.com/xpack-dev-tools/bison-xpack/blob/xpack/LICENSE)
 
-# The xPack GNU sed
+# The xPack GNU bison
 
-A standalone cross-platform (macOS/Linux) **GNU sed**
+A standalone cross-platform (macOS/Linux) **GNU bison**
 binary distribution, intended for reproducible builds.
 
 The main target is macOS 10.13, whose older version of this utility
@@ -18,12 +18,12 @@ this project also includes the build scripts.
 ## Overview
 
 This open source project is hosted on GitHub as
-[`xpack-dev-tools/sed-xpack`](https://github.com/xpack-dev-tools/sed-xpack)
+[`xpack-dev-tools/bison-xpack`](https://github.com/xpack-dev-tools/bison-xpack)
 and provides the platform specific binaries for the
-[xPack GNU sed](https://xpack.github.io/sed/).
+[xPack GNU bison](https://xpack.github.io/bison/).
 
 This distribution follows the official
-[GNU sed](https://www.gnu.org/software/sed/) releases.
+[GNU bison](https://www.gnu.org/software/bison/) releases.
 
 The binaries can be installed automatically as **binary xPacks** or manually as
 **portable archives**.
@@ -37,13 +37,13 @@ more weeks to get the latest patch release.
 ## User info
 
 This section is intended as a shortcut for those who plan
-to use the GNU sed binaries. For full details please read the
-[xPack GNU sed](https://xpack.github.io/sed/) pages.
+to use the GNU bison binaries. For full details please read the
+[xPack GNU bison](https://xpack.github.io/bison/) pages.
 
 ### Easy install
 
-The easiest way to install GNU sed is using the **binary xPack**, available as
-[`@xpack-dev-tools/sed`](https://www.npmjs.com/package/@xpack-dev-tools/sed)
+The easiest way to install GNU bison is using the **binary xPack**, available as
+[`@xpack-dev-tools/bison`](https://www.npmjs.com/package/@xpack-dev-tools/bison)
 from the [`npmjs.com`](https://www.npmjs.com) registry.
 
 #### Prerequisites
@@ -73,7 +73,7 @@ a development dependency for a project is quite easy:
 cd my-project
 xpm init # Add a package.json if not already present
 
-xpm install @xpack-dev-tools/sed@latest --verbose
+xpm install @xpack-dev-tools/bison@latest --verbose
 
 ls -l xpacks/.bin
 ```
@@ -94,22 +94,22 @@ This location is configurable via the environment variable
 `XPACKS_STORE_FOLDER`; for more details please check the
 [xpm folders](https://xpack.github.io/xpm/folders/) page.
 
-It is also possible to install GNU sed globally, in the user home folder:
+It is also possible to install GNU bison globally, in the user home folder:
 
 ```sh
-xpm install --global @xpack-dev-tools/sed@latest --verbose
+xpm install --global @xpack-dev-tools/bison@latest --verbose
 ```
 
 After install, the package should create a structure like this (macOS files;
 only the first two depth levels are shown):
 
 ```console
-$ tree -L 2 /Users/ilg/Library/xPacks/\@xpack-dev-tools/sed/4.9.0-2.1/.content/
-/Users/ilg/Library/xPacks/\@xpack-dev-tools/sed/4.9.0-2.1/.content/
+$ tree -L 2 /Users/ilg/Library/xPacks/\@xpack-dev-tools/bison/3.8.2-1.1/.content/
+/Users/ilg/Library/xPacks/\@xpack-dev-tools/bison/3.8.2-1.1/.content/
 ├── README.md
 ├── bin
-│   ├── gsed -> sed
-│   └── sed
+│   ├── gsed -> bison
+│   └── bison
 └── distro-info
     ├── CHANGELOG.md
     ├── licenses
@@ -131,54 +131,54 @@ To remove the links created by xpm in the current project:
 ```sh
 cd my-project
 
-xpm uninstall @xpack-dev-tools/sed
+xpm uninstall @xpack-dev-tools/bison
 ```
 
 To completely remove the package from the central xPack store:
 
 ```sh
-xpm uninstall --global @xpack-dev-tools/sed
+xpm uninstall --global @xpack-dev-tools/bison
 ```
 
 ### Manual install
 
-For all platforms, the **xPack GNU sed**
+For all platforms, the **xPack GNU bison**
 binaries are released as portable
 archives that can be installed in any location.
 
 The archives can be downloaded from the
-GitHub [Releases](https://github.com/xpack-dev-tools/sed-xpack/releases/)
+GitHub [Releases](https://github.com/xpack-dev-tools/bison-xpack/releases/)
 page.
 
 For more details please read the
-[Install](https://xpack.github.io/sed/install/) page.
+[Install](https://xpack.github.io/bison/install/) page.
 
 ### Versioning
 
-The version strings used by the GNU sed project are two number strings
-like `4.9`, extended to `4.9.0` to look like semver;
+The version strings used by the GNU bison project are three number strings
+like `3.8.2`, which looks like semver;
 to this string the xPack distribution adds a four number,
 but since semver allows only three numbers, all additional ones can
 be added only as pre-release strings, separated by a dash,
-like `4.9.0-2`. When published as a npm package, the version gets
-a fifth number, like `4.9.0-2.1`.
+like `3.8.2-1`. When published as a npm package, the version gets
+a fifth number, like `3.8.2-1.1`.
 
 Since adherence of third party packages to semver is not guaranteed,
-it is recommended to use semver expressions like `^4.9.0` and `~4.9.0`
-with caution, and prefer exact matches, like `4.9.0-2.1`.
+it is recommended to use semver expressions like `^3.8.2` and `~3.8.2`
+with caution, and prefer exact matches, like `3.8.2-1.1`.
 
 ## Maintainer info
 
 For maintainer info, please see the
-[README-MAINTAINER](https://github.com/xpack-dev-tools/sed-xpack/blob/xpack/README-MAINTAINER.md).
+[README-MAINTAINER](https://github.com/xpack-dev-tools/bison-xpack/blob/xpack/README-MAINTAINER.md).
 
 ## Support
 
 The quick advice for getting support is to use the GitHub
-[Discussions](https://github.com/xpack-dev-tools/sed-xpack/discussions/).
+[Discussions](https://github.com/xpack-dev-tools/bison-xpack/discussions/).
 
 For more details please read the
-[Support](https://xpack.github.io/sed/support/) page.
+[Support](https://xpack.github.io/bison/support/) page.
 
 ## License
 
@@ -193,16 +193,16 @@ corresponding licenses are available in the installed
 
 ## Download analytics
 
-- GitHub [`xpack-dev-tools/sed-xpack`](https://github.com/xpack-dev-tools/sed-xpack/) repo
+- GitHub [`xpack-dev-tools/bison-xpack`](https://github.com/xpack-dev-tools/bison-xpack/) repo
   - latest xPack release
-[![Github All Releases](https://img.shields.io/github/downloads/xpack-dev-tools/sed-xpack/latest/total.svg)](https://github.com/xpack-dev-tools/sed-xpack/releases/)
-  - all xPack releases [![Github All Releases](https://img.shields.io/github/downloads/xpack-dev-tools/sed-xpack/total.svg)](https://github.com/xpack-dev-tools/sed-xpack/releases/)
-  - [individual file counters](https://somsubhra.github.io/github-release-stats/?username=xpack-dev-tools&repository=sed-xpack) (grouped per release)
-- npmjs.com [`@xpack-dev-tools/sed`](https://www.npmjs.com/package/@xpack-dev-tools/sed/) xPack
+[![Github All Releases](https://img.shields.io/github/downloads/xpack-dev-tools/bison-xpack/latest/total.svg)](https://github.com/xpack-dev-tools/bison-xpack/releases/)
+  - all xPack releases [![Github All Releases](https://img.shields.io/github/downloads/xpack-dev-tools/bison-xpack/total.svg)](https://github.com/xpack-dev-tools/bison-xpack/releases/)
+  - [individual file counters](https://somsubhra.github.io/github-release-stats/?username=xpack-dev-tools&repository=bison-xpack) (grouped per release)
+- npmjs.com [`@xpack-dev-tools/bison`](https://www.npmjs.com/package/@xpack-dev-tools/bison/) xPack
   - latest release, per month
-[![npm (scoped)](https://img.shields.io/npm/v/@xpack-dev-tools/sed.svg)](https://www.npmjs.com/package/@xpack-dev-tools/sed/)
-[![npm](https://img.shields.io/npm/dm/@xpack-dev-tools/sed.svg)](https://www.npmjs.com/package/@xpack-dev-tools/sed/)
-  - all releases [![npm](https://img.shields.io/npm/dt/@xpack-dev-tools/sed.svg)](https://www.npmjs.com/package/@xpack-dev-tools/sed/)
+[![npm (scoped)](https://img.shields.io/npm/v/@xpack-dev-tools/bison.svg)](https://www.npmjs.com/package/@xpack-dev-tools/bison/)
+[![npm](https://img.shields.io/npm/dm/@xpack-dev-tools/bison.svg)](https://www.npmjs.com/package/@xpack-dev-tools/bison/)
+  - all releases [![npm](https://img.shields.io/npm/dt/@xpack-dev-tools/bison.svg)](https://www.npmjs.com/package/@xpack-dev-tools/bison/)
 
 Credit to [Shields IO](https://shields.io) for the badges and to
 [Somsubhra/github-release-stats](https://github.com/Somsubhra/github-release-stats)
