@@ -4,7 +4,9 @@ Entries in this file are in reverse chronological order.
 
 ## 2023-08-17
 
-* v3.8.2-1 released
+* v3.8.2-1.1 published on npmjs.com
+* 9a7f359 package.json: update urls for 3.8.2-1.1 release
+* 3bb8d42 CHANGELOG update
 * 5b12aea re-generate workflows
 * 54b22d4 update.sh: install xpack-m4
 * cc21bda package.json: bump deps
