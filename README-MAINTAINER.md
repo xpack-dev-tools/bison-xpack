@@ -489,7 +489,7 @@ These commands use the `xpack-develop` branch of this repo.
 
 ## Durations & results
 
-The builds take about 5 minutes to complete.
+The builds take about 3 minutes to complete.
 
 The workflow result and logs are available from the
 [Actions](https://github.com/xpack-dev-tools/bison-xpack/actions/) page.
