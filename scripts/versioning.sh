@@ -12,14 +12,14 @@
 
 function application_build_versioned_components()
 {
-  XBB_SED_VERSION="$(xbb_strip_version_pre_release "${XBB_RELEASE_VERSION}")"
-  if [[ "${XBB_SED_VERSION}" =~ [0-9]+[.][0-9]+[.]0 ]]
+  XBB_BISON_VERSION="$(xbb_strip_version_pre_release "${XBB_RELEASE_VERSION}")"
+  if [[ "${XBB_BISON_VERSION}" =~ [0-9]+[.][0-9]+[.]0 ]]
   then
-    XBB_SED_VERSION="$(echo "${XBB_SED_VERSION}" | sed -e 's|.0$||')"
+    XBB_BISON_VERSION="$(echo "${XBB_BISON_VERSION}" | bison -e 's|.0$||')"
   fi
 
   # Keep them in sync with the combo archive content.
-  if [[ "${XBB_RELEASE_VERSION}" =~ 4[.]9[.].*-.* ]]
+  if [[ "${XBB_RELEASE_VERSION}" =~ 3[.]8[.].*-.* ]]
   then
     # -------------------------------------------------------------------------
     # Build the native dependencies.
@@ -44,8 +44,8 @@ function application_build_versioned_components()
     xbb_set_executables_install_path "${XBB_APPLICATION_INSTALL_FOLDER_PATH}"
     xbb_set_libraries_install_path "${XBB_DEPENDENCIES_INSTALL_FOLDER_PATH}"
 
-    # https://ftp.gnu.org/gnu/sed/
-    sed_build "${XBB_SED_VERSION}"
+    # https://ftp.gnu.org/gnu/bison/
+    bison_build "${XBB_BISON_VERSION}"
 
     # -------------------------------------------------------------------------
   else
