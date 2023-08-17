@@ -13,10 +13,6 @@
 function application_build_versioned_components()
 {
   XBB_BISON_VERSION="$(xbb_strip_version_pre_release "${XBB_RELEASE_VERSION}")"
-  if [[ "${XBB_BISON_VERSION}" =~ [0-9]+[.][0-9]+[.]0 ]]
-  then
-    XBB_BISON_VERSION="$(echo "${XBB_BISON_VERSION}" | bison -e 's|.0$||')"
-  fi
 
   # Keep them in sync with the combo archive content.
   if [[ "${XBB_RELEASE_VERSION}" =~ 3[.]8[.].*-.* ]]
