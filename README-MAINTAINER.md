@@ -238,9 +238,9 @@ archive and its SHA signature, created in the `deploy` folder:
 
 ```console
 $ ls -l ~/Work/xpack-dev-tools/bison-xpack.git/build/darwin-x64/deploy
-total 256
--rw-r--r--  1 ilg  staff  125750 Jan 29 10:08 xpack-bison-3.8.2-1-darwin-x64.tar.gz
--rw-r--r--  1 ilg  staff     102 Jan 29 10:08 xpack-bison-3.8.2-1-darwin-x64.tar.gz.sha
+total 3096
+-rw-r--r--  1 ilg  staff  1579537 Aug 17 07:08 xpack-bison-3.8.2-1-darwin-x64.tar.gz
+-rw-r--r--  1 ilg  staff      104 Aug 17 07:08 xpack-bison-3.8.2-1-darwin-x64.tar.gz.sha
 ```
 
 #### Apple Silicon macOS
@@ -271,9 +271,9 @@ archive and its SHA signature, created in the `deploy` folder:
 
 ```console
 $ ls -l ~/Work/xpack-dev-tools/bison-xpack.git/build/darwin-arm64/deploy
-total 248
--rw-r--r--  1 ilg  staff  120653 Jan 29 10:08 xpack-bison-3.8.2-1-darwin-arm64.tar.gz
--rw-r--r--  1 ilg  staff     104 Jan 29 10:08 xpack-bison-3.8.2-1-darwin-arm64.tar.gz.sha
+total 3072
+-rw-r--r--  1 ilg  staff  1566442 Aug 17 07:08 xpack-bison-3.8.2-1-darwin-arm64.tar.gz
+-rw-r--r--  1 ilg  staff      106 Aug 17 07:08 xpack-bison-3.8.2-1-darwin-arm64.tar.gz.sha
 ```
 
 #### Intel GNU/Linux
@@ -306,9 +306,9 @@ archive and its SHA signature, created in the `deploy` folder:
 
 ```console
 $ ls -l ~/Work/xpack-dev-tools/bison-xpack.git/build/linux-x64/deploy
-total 124
--rw-r--r-- 1 ilg ilg 121106 Jan 29 08:08 xpack-bison-3.8.2-1-linux-x64.tar.gz
--rw-r--r-- 1 ilg ilg    101 Jan 29 08:08 xpack-bison-3.8.2-1-linux-x64.tar.gz.sha
+total 1584
+-rw-r--r-- 1 ilg ilg 1615614 Aug 17 04:08 xpack-bison-3.8.2-1-linux-x64.tar.gz
+-rw-r--r-- 1 ilg ilg     103 Aug 17 04:08 xpack-bison-3.8.2-1-linux-x64.tar.gz.sha
 ```
 
 ##### Build the Windows binaries
@@ -343,9 +343,9 @@ archive and its SHA signature, created in the `deploy` folder:
 
 ```console
 $ ls -l ~/Work/xpack-dev-tools/bison-xpack.git/build/linux-arm64/deploy
-total 124
--rw-r--r-- 1 ilg ilg 119529 Jan 29 08:10 xpack-bison-3.8.2-1-linux-arm64.tar.gz
--rw-r--r-- 1 ilg ilg    103 Jan 29 08:10 xpack-bison-3.8.2-1-linux-arm64.tar.gz.sha
+total 1576
+-rw-r--r-- 1 ilg ilg 1605729 Aug 17 04:13 xpack-bison-3.8.2-1-linux-arm64.tar.gz
+-rw-r--r-- 1 ilg ilg     105 Aug 17 04:13 xpack-bison-3.8.2-1-linux-arm64.tar.gz.sha
 ```
 
 #### Arm GNU/Linux 32-bit
@@ -376,9 +376,9 @@ archive and its SHA signature, created in the `deploy` folder:
 
 ```console
 $ ls -l ~/Work/xpack-dev-tools/bison-xpack.git/build/linux-arm/deploy
-total 116
--rw-r--r-- 1 ilg ilg 114077 Jan 29 08:10 xpack-bison-3.8.2-1-linux-arm.tar.gz
--rw-r--r-- 1 ilg ilg    101 Jan 29 08:10 xpack-bison-3.8.2-1-linux-arm.tar.gz.sha
+total 1556
+-rw-r--r-- 1 ilg ilg 1587221 Aug 17 04:13 xpack-bison-3.8.2-1-linux-arm.tar.gz
+-rw-r--r-- 1 ilg ilg     103 Aug 17 04:13 xpack-bison-3.8.2-1-linux-arm.tar.gz.sha
 ```
 
 ### Build a debug version
@@ -571,8 +571,9 @@ xattr -cr ${HOME}/Downloads/xpack-*
 On GNU/Linux and macOS systems, use:
 
 ```sh
-.../xpack-bison-3.8.2-1/bin/gsed --version
-bison (GNU bison) 4.9
+.../xpack-bison-3.8.2-1/bin/bison --version
+bison (GNU Bison) 3.8.2
+Written by Robert Corbett and Richard Stallman.
 ```
 
 ## Create a new GitHub pre-release draft
