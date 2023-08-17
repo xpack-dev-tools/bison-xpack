@@ -18,25 +18,25 @@ function tests_update_system()
   then
     run_verbose sudo apt-get update
     # To make 32-bit tests possible.
-    run_verbose sudo apt-get -qq install --yes g++
+    run_verbose sudo apt-get -qq install --yes m4 g++
   elif [[ ${image_name} == *ubuntu* ]] || [[ ${image_name} == *debian* ]]
   then
-    run_verbose apt-get -qq install --yes g++
+    run_verbose apt-get -qq install --yes m4 g++
   elif [[ ${image_name} == *raspbian* ]]
   then
-    run_verbose apt-get -qq install --yes g++
+    run_verbose apt-get -qq install --yes m4 g++
   elif [[ ${image_name} == *centos* ]] || [[ ${image_name} == *redhat* ]] || [[ ${image_name} == *fedora* ]]
   then
-    run_verbose yum install --assumeyes --quiet gcc-c++
+    run_verbose yum install --assumeyes --quiet m4 gcc-c++
   elif [[ ${image_name} == *suse* ]]
   then
-    run_verbose zypper --quiet --no-gpg-checks install --no-confirm gcc-c++
+    run_verbose zypper --quiet --no-gpg-checks install --no-confirm m4 gcc-c++
   elif [[ ${image_name} == *manjaro* ]]
   then
-    run_verbose pacman -S --quiet --noconfirm --noprogressbar g++
+    run_verbose pacman -S --quiet --noconfirm --noprogressbar m4 g++
   elif [[ ${image_name} == *archlinux* ]]
   then
-    run_verbose pacman -S --quiet --noconfirm --noprogressbar gcc
+    run_verbose pacman -S --quiet --noconfirm --noprogressbar m4 gcc
   fi
 }
 
