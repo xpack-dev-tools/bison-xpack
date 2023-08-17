@@ -61,7 +61,7 @@
       "yacc": "./.content/bin/yacc"
     },
     "devDependencies": {
-      "@xpack-dev-tools/xbb-helper": "^1.5.2"
+      "@xpack-dev-tools/xbb-helper": "^1.6.0"
     },
     "properties": {
       "appName": "GNU bison",
