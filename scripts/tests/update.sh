@@ -27,10 +27,10 @@ function tests_update_system()
     run_verbose apt-get -qq install --yes m4 g++
   elif [[ ${image_name} == *centos* ]] || [[ ${image_name} == *redhat* ]] || [[ ${image_name} == *fedora* ]]
   then
-    run_verbose yum install --assumeyes --quiet m4 gcc-g++
+    run_verbose yum install --assumeyes --quiet m4 gcc-c++
   elif [[ ${image_name} == *suse* ]]
   then
-    run_verbose zypper --quiet --no-gpg-checks install --no-confirm m4 gcc-g++
+    run_verbose zypper --quiet --no-gpg-checks install --no-confirm m4 gcc-c++
   elif [[ ${image_name} == *manjaro* ]]
   then
     run_verbose pacman -S --quiet --noconfirm --noprogressbar m4 g++
