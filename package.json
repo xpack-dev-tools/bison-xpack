@@ -36,23 +36,23 @@
       "platforms": {
         "darwin-arm64": {
           "fileName": "xpack-bison-3.8.2-1-darwin-arm64.tar.gz",
-          "sha256": "8f1e86ff9f6c2d46327782fc1fb1587d9fdff1fed4b4617044d891b77f557296"
+          "sha256": "e46dd1b8ae40125c7180470fccddde121ebf219e7cd27a3b7c118d2815247a3c"
         },
         "darwin-x64": {
           "fileName": "xpack-bison-3.8.2-1-darwin-x64.tar.gz",
-          "sha256": "be54a2c8f9bf795589b326a7dbb5523529343914577d598a0f47aaa8cbd776bf"
+          "sha256": "d45064315fa2612817979399ac11532ffe68c4786fa664ed6655b233e8bc818b"
         },
         "linux-arm64": {
           "fileName": "xpack-bison-3.8.2-1-linux-arm64.tar.gz",
-          "sha256": "fbe9da98479f051c71c380e74605c767a89d9e6ddbbc58449325f76ac3d9398a"
+          "sha256": "907ff696b73a01d1224ac193c9e1a966bf53336eb3e7bc7dee459ea9e086284f"
         },
         "linux-arm": {
           "fileName": "xpack-bison-3.8.2-1-linux-arm.tar.gz",
-          "sha256": "17d4455b96fa746c0ccf83d565e5e5222730edc2b4ac40fc81d6d6ae523fe480"
+          "sha256": "b094cf6591d137ba5de81305f4e841c894ad5a2e2aa01447491e3bc82e1624c6"
         },
         "linux-x64": {
           "fileName": "xpack-bison-3.8.2-1-linux-x64.tar.gz",
-          "sha256": "0475b166e324ff70581dfc76b38c6c34b6e8688e8fe1d34d9bb257b4726d9b3f"
+          "sha256": "543bc8f31c05713c5506c1a7dfa4fe81e57dec3cc41c243a47a08e4defd6100d"
         }
       }
     },
