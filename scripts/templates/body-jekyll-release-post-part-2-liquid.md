@@ -15,13 +15,13 @@ with Ubuntu 18, Debian 10 and RedHat 8.
 
 ## Download analytics
 
-- GitHub [xpack-dev-tools/sed-xpack](https://github.com/xpack-dev-tools/sed-xpack/)
-  - this release [![Github All Releases](https://img.shields.io/github/downloads/xpack-dev-tools/sed-xpack/v{% raw %}{{ page.version }}{% endraw %}/total.svg)](https://github.com/xpack-dev-tools/sed-xpack/releases/v{% raw %}{{ page.version }}{% endraw %}/)
-  - all xPack releases [![Github All Releases](https://img.shields.io/github/downloads/xpack-dev-tools/sed-xpack/total.svg)](https://github.com/xpack-dev-tools/sed-xpack/releases/)
-  - [individual file counters](https://somsubhra.github.io/github-release-stats/?username=xpack-dev-tools&repository=sed-xpack) (grouped per release)
-- npmjs.com [@xpack-dev-tools/sed](https://www.npmjs.com/package/@xpack-dev-tools/sed)
-  - latest releases [![npm](https://img.shields.io/npm/dw/@xpack-dev-tools/sed.svg)](https://www.npmjs.com/package/@xpack-dev-tools/sed/)
-  - all @xpack-dev-tools releases [![npm](https://img.shields.io/npm/dt/@xpack-dev-tools/sed.svg)](https://www.npmjs.com/package/@xpack-dev-tools/sed/)
+- GitHub [xpack-dev-tools/bison-xpack](https://github.com/xpack-dev-tools/bison-xpack/)
+  - this release [![Github All Releases](https://img.shields.io/github/downloads/xpack-dev-tools/bison-xpack/v{% raw %}{{ page.version }}{% endraw %}/total.svg)](https://github.com/xpack-dev-tools/bison-xpack/releases/v{% raw %}{{ page.version }}{% endraw %}/)
+  - all xPack releases [![Github All Releases](https://img.shields.io/github/downloads/xpack-dev-tools/bison-xpack/total.svg)](https://github.com/xpack-dev-tools/bison-xpack/releases/)
+  - [individual file counters](https://somsubhra.github.io/github-release-stats/?username=xpack-dev-tools&repository=bison-xpack) (grouped per release)
+- npmjs.com [@xpack-dev-tools/bison](https://www.npmjs.com/package/@xpack-dev-tools/bison)
+  - latest releases [![npm](https://img.shields.io/npm/dw/@xpack-dev-tools/bison.svg)](https://www.npmjs.com/package/@xpack-dev-tools/bison/)
+  - all @xpack-dev-tools releases [![npm](https://img.shields.io/npm/dt/@xpack-dev-tools/bison.svg)](https://www.npmjs.com/package/@xpack-dev-tools/bison/)
 
 Credit to [Shields IO](https://shields.io) for the badges and to
 [Somsubhra/github-release-stats](https://github.com/Somsubhra/github-release-stats)
