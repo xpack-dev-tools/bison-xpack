@@ -134,11 +134,10 @@ dist
 .vscode/c_cpp_properties.json
 
 # xpm
-node_modules/
 xpacks/
-build/
+build*/
 
-*.tgz
+xpack-*.tgz
 
 # Windows
 Thumbs.db

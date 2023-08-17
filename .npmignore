@@ -12,7 +12,7 @@ patches/
 pkgconfig/
 scripts/
 test*/
-build/
+build*/
 ci/
 docs/
 example*/
@@ -20,8 +20,10 @@ example*/
 xpacks/
 node_modules/
 
-*.tgz
+/*.tgz
 
 README-*
 LICENSE-*
 CONTRIBUTING**
+
+wrappers/
