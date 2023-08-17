@@ -19,8 +19,7 @@
   "keywords": [
     "xpack",
     "gnu",
-    "bison",
-    "gsed"
+    "bison"
   ],
   "author": {
     "name": "Liviu Ionescu",
