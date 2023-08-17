@@ -12,7 +12,7 @@
 function tests_update_system()
 {
   local image_name="$1"
-
+  set -x
   # Make sure that the minimum prerequisites are met.
   if [[ ${image_name} == github-actions-ubuntu* ]]
   then
