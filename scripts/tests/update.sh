@@ -40,4 +40,10 @@ function tests_update_system()
   fi
 }
 
+function tests_install_dependencies()
+{
+  echo baburiba
+  env | sort
+}
+
 # -----------------------------------------------------------------------------
