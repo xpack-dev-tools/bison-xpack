@@ -108,14 +108,19 @@ $ tree -L 2 /Users/ilg/Library/xPacks/\@xpack-dev-tools/bison/3.8.2-1.1/.content
 /Users/ilg/Library/xPacks/\@xpack-dev-tools/bison/3.8.2-1.1/.content/
 ├── README.md
 ├── bin
-│   ├── gsed -> bison
-│   └── bison
-└── distro-info
-    ├── CHANGELOG.md
-    ├── licenses
-    └── scripts
+│   ├── bison
+│   └── yacc
+├── distro-info
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   └── scripts
+├── libexec
+│   └── libiconv.2.dylib
+└── share
+    ├── aclocal
+    └── bison
 
-4 directories, 4 files
+9 directories, 5 files
 ```
 
 No other files are installed in any system folders or other locations.
