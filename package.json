@@ -62,7 +62,7 @@
     },
     "devDependencies": {
       "@xpack-dev-tools/m4": "1.4.19-3.1",
-      "@xpack-dev-tools/xbb-helper": "^2.0.0"
+      "@xpack-dev-tools/xbb-helper": "^2.0.1"
     },
     "properties": {
       "appName": "GNU bison",
