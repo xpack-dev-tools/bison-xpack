@@ -17,7 +17,8 @@
         "programName": "bison",
         "branding": "bison (GNU Bison) ",
         "$link": "https://ftp.gnu.org/gnu/bison/",
-        "bisonReleaseDate": "25 Sep 2021"
+        "bisonReleaseDate": "25 Sep 2021",
+        "isSecondaryTool": "true"
       },
       "buildFolderRelativePath": "{{ 'build' | path_join: configuration.name | to_filename | downcase }}",
       "buildFolderRelativePathPosix": "{{ 'build' | path_posix_join: configuration.name | downcase }}",
