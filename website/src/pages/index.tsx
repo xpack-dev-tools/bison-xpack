@@ -42,7 +42,7 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout 
-      title={`Hello from bison`}
+      title={`Welcome to bison`}
       description="A binary package with the bison executables">
       <HomepageHeader />
       <main>
