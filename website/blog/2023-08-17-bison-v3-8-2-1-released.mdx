@@ -1,5 +1,6 @@
 ---
 title: xPack GNU bison v3.8.2-1 released
+seo_title: Version 3.8.2-1 released
 description: Version 3.8.2-1 is the first release of xPack GNU bison.
 keywords:
   - xpack
@@ -26,17 +27,15 @@ download_url: https://github.com/xpack-dev-tools/bison-xpack/releases/tag/v3.8.2
 
 ---
 
-<head>
-  <title>{frontMatter.title}</title>
-  <meta property="og:title" content={frontMatter.title} />
-</head>
+import {PageMetadata} from '@docusaurus/theme-common';
+import Image from '@theme/IdealImage';
+import CodeBlock from '@theme/CodeBlock';
 
 Version **3.8.2-1** is the first release of GNU bison.
 
 <!-- truncate -->
 
-import Image from '@theme/IdealImage';
-import CodeBlock from '@theme/CodeBlock';
+<PageMetadata title={frontMatter.seo_title} />
 
 The [xPack GNU bison](https://xpack-dev-tools.github.io/bison-xpack/)
 is a standalone cross-platform binary distribution of
