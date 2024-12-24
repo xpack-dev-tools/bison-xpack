@@ -1,0 +1,7 @@
+Sitemap: https://xpack-dev-tools.github.io/bison-xpack/sitemap.xml
+
+User-agent: *
+Disallow: /bison-xpack/blog/archive/
+Disallow: /bison-xpack/blog/authors/
+Disallow: /bison-xpack/blog/page/
+Disallow: /bison-xpack/blog/tags/
