@@ -1,7 +1,7 @@
 {
   "name": "@xpack-dev-tools/bison",
   "version": "3.8.2-1.1",
-  "description": "A binary xPack with the GNU bison executables",
+  "description": "A binary xpm package with the GNU bison executables",
   "main": "",
   "scripts": {
     "postversion": "git push origin --all && git push origin --tags",
