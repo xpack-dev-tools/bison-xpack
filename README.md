@@ -5,8 +5,7 @@
 
 # The xPack GNU bison
 
-A standalone cross-platform (Windows, macOS, GNU/Linux)
-binary distribution of GNU bison,
+A standalone, cross-platform (GNU/Linux, macOS) binary distribution of GNU bison,
 intended for reproducible builds.
 
 ## Project documentation
