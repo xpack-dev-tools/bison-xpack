@@ -72,7 +72,8 @@
     "liquidjs": "^10.19.1"
   },
   "topConfig": {
-    "longName": "GNU bison"
+    "longName": "GNU bison",
+    "shortName": "bison"
   },
   "engines": {
     "node": " >=18.0.0"
