@@ -56,7 +56,15 @@
       "last 5 safari version"
     ]
   },
-  "websiteConfig": {},
+  "websiteConfig": {
+    "customFields": {
+      "programName": "bison",
+      "branding": "bison (GNU Bison) ",
+      "$link": "https://ftp.gnu.org/gnu/bison/",
+      "bisonReleaseDate": "25 Sep 2021",
+      "isSecondaryTool": "true"
+    }
+  },
   "engines": {
     "node": ">=18.0"
   }
