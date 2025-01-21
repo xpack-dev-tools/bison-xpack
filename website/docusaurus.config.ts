@@ -275,7 +275,7 @@ const config: Config = {
           label: 'GitHub',
           items: [
             {
-              label: `bison-xpack`,
+              label: `bison-xpack project`,
               href: `https://github.com/xpack-dev-tools/bison-xpack/`,
             },
             {
@@ -348,7 +348,7 @@ const config: Config = {
               href: 'https://www.paypal.com/donate/?hosted_button_id=5MFRG9ZRBETQ8',
             },
             {
-              label: 'GitHub bison-xpack',
+              label: 'GitHub bison-xpack project',
               href: 'https://github.com/xpack-dev-tools/bison-xpack/',
             },
             {
