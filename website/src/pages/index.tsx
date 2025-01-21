@@ -34,7 +34,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
 
         <div className={styles.installWithCopy}>
-          <InstallWithCopy>xpm install @xpack-dev-tools/bison@{customField('releaseVersion')} --verbose</InstallWithCopy>
+          <InstallWithCopy>xpm install @xpack-dev-tools/bison@3.8.2-1.1 --verbose</InstallWithCopy>
         </div>
 
       </div>
