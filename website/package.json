@@ -76,7 +76,8 @@
     "branding": "bison (GNU Bison) ",
     "isSecondaryTool": "true",
     "$link": "https://ftp.gnu.org/gnu/bison/",
-    "bisonReleaseDate": "25 Sep 2021"
+    "bisonReleaseDate": "25 Sep 2021",
+    "shareOnTwitter": "true"
   },
   "engines": {
     "node": ">=18.0"
