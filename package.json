@@ -70,6 +70,7 @@
   "topConfig": {
     "descriptiveName": "GNU bison",
     "permalinkName": "bison",
+    "skipCiTests": "true",
     "useSelfHostedRunners": "true"
   },
   "engines": {
