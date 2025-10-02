@@ -4,7 +4,7 @@ TODO: select one
 
 Version **{{releaseVersion}}** is a maintenance release of the **xPack GNU bison** package; it fixes ...
 
-Version **{{releaseVersion}}** is a new release of the **xPack GNU bison** package, following the upstream GNU bison [release](https://ftp.gnu.org/gnu/bison/).
+Version **{{releaseVersion}}** is a new release of the **xPack GNU bison** package, following the upstream GNU bison [release](https://ftpmirror.gnu.org/gnu/bison/).
 
 [Continue reading »](will-be-updated-shortly)
 
