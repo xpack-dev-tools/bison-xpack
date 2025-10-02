@@ -68,12 +68,13 @@
     "liquidjs": "^10.19.1"
   },
   "topConfig": {
-    "descriptiveName": "GNU bison",
+    "descriptiveName": "xPack GNU bison",
+    "upstreamDescriptiveName": "GNU bison",
     "permalinkName": "bison",
     "skipCiTests": "true",
-    "useSelfHostedRunners": "true"
+    "useSelfHostedRunners": "false"
   },
   "engines": {
-    "node": " >=18.0.0"
+    "node": " >=20.0"
   }
 }
