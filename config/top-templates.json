@@ -1,0 +1,8 @@
+{
+  "descriptiveName": "xPack GNU bison",
+  "permalinkName": "bison",
+  "preferredName": "xPack GNU bison",
+  "upstreamDescriptiveName": "GNU bison",
+  "skipCiTests": true,
+  "useSelfHostedRunners": false
+}
